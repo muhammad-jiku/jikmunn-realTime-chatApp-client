@@ -49,7 +49,7 @@ const SignUp = () => {
                 <label htmlFor="confirmPassword">Confirm Password</label>
                 <input
                   type="password"
-                  placeholder="password"
+                  placeholder="confirm password"
                   className="formControl"
                   id="confirmPassword"
                 />
@@ -74,8 +74,10 @@ const SignUp = () => {
                 <input type="submit" value="Sign Up" className="btn" />
               </div>
               <div className="formGroup">
-                <span>Already have and account?</span>{' '}
-                <span onClick={() => navigate('/signin')}>Sign In</span>
+                <span>
+                  Already have and account?
+                  <em onClick={() => navigate('/signin')}>Sign In</em>
+                </span>{' '}
               </div>
             </form>
           </div>
